@@ -70,6 +70,25 @@ body {
   background-size: cover;
 }
 
+.slider-pagination {
+  display: flex;
+  flex-direction: row;
+}
+
+.slider-pagination__text {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 40%;
+  overflow: hidden;
+}
+
 label {
+  flex-shrink: 0;
+  width: -webkit-fill-available;
   font-size: 1.6rem;
+}
+
+.slider-pagination__inputs {
+  display: flex;
+  justify-content: flex-end;
 }
