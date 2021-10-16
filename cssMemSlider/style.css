@@ -54,6 +54,14 @@ body {
   flex-shrink: 0;
 }
 
+.slide-1,
+.slide-2,
+.slide-3,
+.slide-4,
+.slide-5 {
+  border-radius: 30px;
+}
+
 .slide-1 {
   background: url('./assets/mem-1.jpg')no-repeat center center;
   background-size: cover;
