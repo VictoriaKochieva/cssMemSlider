@@ -133,9 +133,9 @@ label {
   background-color: rgb(19, 117, 107);
 }
 
-.pagination__button:hover {
+/* .pagination__button:hover {
   background-color: transparent;
-}
+} */
 
 .text-1,
 .text-2,
@@ -202,6 +202,15 @@ p {
 #slide4:checked ~ .slider-pagination .pagination label[for="slide4"] > .btn-4,
 #slide5:checked ~ .slider-pagination .pagination label[for="slide5"] > .btn-5  {
   background: transparent;
+}
+
+#slide1 ~ .slider-pagination .pagination label[for="slide1"]:hover > .btn-1,
+#slide2 ~ .slider-pagination .pagination label[for="slide2"]:hover > .btn-2,
+#slide3 ~ .slider-pagination .pagination label[for="slide3"]:hover > .btn-3,
+#slide4 ~ .slider-pagination .pagination label[for="slide4"]:hover > .btn-4,
+#slide5 ~ .slider-pagination .pagination label[for="slide5"]:hover > .btn-5  {
+  background: rgb(189, 189, 189);
+  border: rgb(189, 189, 189);
 }
 
 #slide1:active ~ .slider-pagination .pagination label[for="slide1"] > .btn-1,
