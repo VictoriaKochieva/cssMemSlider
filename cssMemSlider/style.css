@@ -298,11 +298,24 @@ label {
   .text {
     font-size: 2.2rem;
   }
-
-  /* .slider-pagination__text {
-    padding-left: 46px;
-    width: 100%;
-  }     */
 }
 
 
+@media screen and (max-width: 480px) {
+  .wrapper-slider {
+    padding-top: 70px;
+  }
+
+  .slider {
+    width: 100%;
+  }
+
+  .slider-pagination__text {
+   width: 100%;
+  }
+
+  .text {
+    width: 100%;
+    font-size: 1.8rem;
+  }
+}
