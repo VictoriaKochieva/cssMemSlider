@@ -22,7 +22,7 @@ body {
 }
 
 .wrapper-slider {
-  padding-top: 150px;
+  padding-top: 5%;
   width: 100%;
   height: 100%; 
 }
@@ -271,6 +271,17 @@ label {
   }
 }
 
+@media screen and (max-width: 1440px) {
+   .slider{     
+    height: calc(51vw - 9%);
+   }
+
+   .pagination {
+    flex-basis: 27%;
+    width: 35%;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .slider {
     height: calc(90vw - 0%);
@@ -295,27 +306,23 @@ label {
     flex-direction: column-reverse;
   }
 
+  .slider-pagination__text {
+    width: 100%;
+   }
+
   .text {
+    width: 100%;
     font-size: 2.2rem;
   }
 }
 
 
 @media screen and (max-width: 480px) {
-  .wrapper-slider {
-    padding-top: 70px;
-  }
-
   .slider {
     width: 100%;
   }
 
-  .slider-pagination__text {
-   width: 100%;
-  }
-
   .text {
-    width: 100%;
     font-size: 1.8rem;
   }
 }
