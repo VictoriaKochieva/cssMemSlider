@@ -44,7 +44,7 @@ body {
   height: calc(60vw - 9%);
   border-radius: 30px;
   overflow: hidden;
-  box-shadow: 4px 9px 31px 26px rgb(2 4 6 / 20%);
+  box-shadow: 4px 11px 20px 22px rgb(34 60 80 / 40%);
 }
 
 .slides {
