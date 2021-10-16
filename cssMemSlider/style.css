@@ -207,8 +207,10 @@ label {
 #slide4:active ~ .slider-pagination .pagination label[for="slide4"] > .btn-4,
 #slide5:active ~ .slider-pagination .pagination label[for="slide5"] > .btn-5  {
   background: rgb(238, 252, 116);
+  filter: blur(5px);
   border: 1px solid rgb(238, 252, 116);
   transform: scale(1.8);
+  opacity: 0.8;
 }
 
 @keyframes changeSlide0 {
