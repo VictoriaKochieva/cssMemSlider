@@ -146,6 +146,10 @@ label {
   opacity: 0;
 }
 
+p {
+  width: 100% !important;
+}
+
 #slide1:checked ~ .slider > .slide-1,
 #slide1:checked ~ .slider-pagination .slider-pagination__text > .text-1 {
   margin-left: 0%;
@@ -292,6 +296,10 @@ label {
   .pagination {
     flex-basis: 27%;
     width: 35%;
+  }
+
+  .slider-pagination__text {
+    flex-basis: 68%;
   }
 }
 
