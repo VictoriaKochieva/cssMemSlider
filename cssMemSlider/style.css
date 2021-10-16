@@ -11,7 +11,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(45deg, rgb(78, 193, 167), rgb(232, 221, 79));
+  background: rgb(12, 63, 51);
   font-size: 2.4rem;
 }
 
@@ -190,16 +190,6 @@ label {
 #slide4:checked ~ .slider-pagination .pagination label[for="slide4"] > .btn-4,
 #slide5:checked ~ .slider-pagination .pagination label[for="slide5"] > .btn-5  {
   background: transparent;
-}
-
-/* #slide2:checked ~ body,
-#slide3:checked ~ body,
-#slide4:checked ~ body,
-#slide5:checked ~ body
-*/
-
-#slide1:checked ~ body {
-  background: linear-gradient(45deg, rgb(78, 193, 167), rgb(232, 221, 79));
 }
 
 #slide1:active ~ .slider-pagination .pagination label[for="slide1"] > .btn-1,
