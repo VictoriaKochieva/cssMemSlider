@@ -11,7 +11,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background: rgb(12, 63, 51);
+  background: linear-gradient(to right, #94525c, #14aad7);
   font-size: 2.4rem;
 }
 
@@ -129,13 +129,9 @@ label {
   width: 23px;
   height: 23px;
   border-radius: 50%;
-  border: 2px solid rgb(37, 221, 203);
-  background-color: rgb(19, 117, 107);
+  border: 2px solid rgb(48 22 53);
+  background-color: rgb(54 57 78);
 }
-
-/* .pagination__button:hover {
-  background-color: transparent;
-} */
 
 .text-1,
 .text-2,
@@ -209,7 +205,7 @@ p {
 #slide3 ~ .slider-pagination .pagination label[for="slide3"]:hover > .btn-3,
 #slide4 ~ .slider-pagination .pagination label[for="slide4"]:hover > .btn-4,
 #slide5 ~ .slider-pagination .pagination label[for="slide5"]:hover > .btn-5  {
-  background: rgb(189, 189, 189);
+  background: rgb(37 57 190);
   border: rgb(189, 189, 189);
 }
 
@@ -218,7 +214,7 @@ p {
 #slide3:active ~ .slider-pagination .pagination label[for="slide3"] > .btn-3,
 #slide4:active ~ .slider-pagination .pagination label[for="slide4"] > .btn-4,
 #slide5:active ~ .slider-pagination .pagination label[for="slide5"] > .btn-5  {
-  background: rgb(238, 252, 116);
+  background: rgb(194, 40, 104);
   filter: blur(5px);
   border: 1px solid rgb(238, 252, 116);
   transform: scale(1.8);
