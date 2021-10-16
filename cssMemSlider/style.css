@@ -22,9 +22,9 @@ body {
 }
 
 .wrapper-slider {
-  display: flex;
-  flex-direction: column-reverse;
-  row-gap: 50px;
+  /* display: flex;
+  /* flex-direction: column-reverse; */
+  /* row-gap: 50px; */
   padding-top: 150px;
   width: 100%;
   height: 100%; 
@@ -34,6 +34,11 @@ body {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
+}
+
+.slider-content {
+  width: 100%;
+  height: 100%;
 }
 
 .slider {
@@ -49,7 +54,6 @@ body {
   width: 100%;
   height: 100%;
   flex-shrink: 0;
-  position: relative;
 }
 
 .slide-1 {
@@ -63,17 +67,17 @@ body {
 }
 
 .slide-3 {
-  background: url('./assets/mem-1.jpg')no-repeat center center;
+  background: url('./assets/mem-3.jpg')no-repeat center center;
   background-size: cover;
 }
 
 .slide-4 {
-  background: url('./assets/mem-4.jpg')no-repeat center center;
+  background: url('./assets/mem-1.jpg')no-repeat center center;
   background-size: cover;
 }
 
 .slide-5 {
-  background: url('./assets/mem-3.jpg')no-repeat center center;
+  background: url('./assets/mem-4.jpg')no-repeat center center;
   background-size: cover;
 }
 
@@ -89,30 +93,46 @@ body {
   font-size: 3.2rem;
 }
 
-.slider-pagination__inputs {
-  display: flex;
-  justify-content: flex-end;
-  flex-basis: 60%;
+ input[name ="point"] {
+  display: none;
 }
 
-input[type="radio"],
-input[type="radio"]:checked {
-  appearance: none;
+
+.slider-pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 30%;
+  width: 30%;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  cursor: pointer;
+}
+
+
+.pagination__button {
+  display: inline-block;
   width: 23px;
   height: 23px;
   border-radius: 50%;
   border: 2px solid rgb(37, 221, 203);
-  cursor: pointer;
+  background-color: rgb(19, 117, 107);
 }
 
-input[type="radio"] { 
-  background: rgb(96, 187, 178); 
+.pagination__button:hover {
+  background-color: transparent;
 }
-
-input[type="radio"]:checked {
-  background: transparent;
-  visibility: visible;
-} 
 
 .text-1,
 .text-2,
@@ -122,48 +142,42 @@ input[type="radio"]:checked {
   opacity: 0;
 }
 
-#slide-1:checked ~ .slider-pagination__text > .text-1 {
+#slide1:checked ~ .slider > .slide-1,
+#slide1:checked ~ .slider-pagination .slider-pagination__text > .text-1 {
   margin-left: 0%;
   opacity: 1;
 }
 
-#slide-2:checked ~ .slider-pagination__text > .text-2 {
+#slide2:checked ~ .slider > .slide-2,
+#slide2:checked ~ .slider-pagination .slider-pagination__text > .text-2 {
   margin-left: -100%;
   opacity: 1;
 }
 
-#slide-3:checked ~ .slider-pagination__text > .text-3 {
+#slide3:checked ~ .slider > .slide-3,
+#slide3:checked ~ .slider-pagination .slider-pagination__text > .text-3 {
   margin-left: -200%;
   opacity: 1;
 }
 
-#slide-4:checked ~ .slider-pagination__text > .text-4 {
+#slide4:checked ~ .slider > .slide-4,
+#slide4:checked ~ .slider-pagination .slider-pagination__text > .text-4 {
   margin-left: -300%;
   opacity: 1;
 }
 
-#slide-5:checked ~ .slider-pagination__text > .text-5 {
+#slide5:checked ~ .slider > .slide-5,
+#slide5:checked ~ .slider-pagination .slider-pagination__text > .text-5 {
   margin-left: -400%;
   opacity: 1;
 }
 
-
-input[type="radio"]#slide-1:checked ~ .slider > .slide-1 {
-  margin-left: 0%;
-}
-
-input[type="radio"]#slide-2:checked ~ .slider > .slide-2 {
-  margin-left: -100%;
-}
-input[type="radio"]#slide-3:checked ~ .slider > .slide-3 {
-  margin-left: -200%;
-}
- input[type="radio"]#slide-4:checked ~ .slider > .slide-4 {
-  margin-left: -300%;
-}
-
-input[type="radio"]#slide-5:checked ~ .slider > .slide-5 {
-  margin-left: -400%;
+#slide1:checked ~ .slider-pagination .pagination label[for="slide1"] > .btn-1,
+#slide2:checked ~ .slider-pagination .pagination label[for="slide2"] > .btn-2,
+#slide3:checked ~ .slider-pagination .pagination label[for="slide3"] > .btn-3,
+#slide4:checked ~ .slider-pagination .pagination label[for="slide4"] > .btn-4,
+#slide5:checked ~ .slider-pagination .pagination label[for="slide5"] > .btn-5  {
+  background: transparent;
 }
 
   /* animation-name: changeSlide;
