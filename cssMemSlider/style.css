@@ -40,7 +40,7 @@ body {
 
 .slider {
   display: flex;
-  width: calc(100vw - 24%);
+  width: calc(100vw - 25%);
   height: calc(60vw - 9%);
   border-radius: 30px;
   overflow: hidden;
