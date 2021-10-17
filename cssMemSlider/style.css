@@ -91,6 +91,7 @@ body {
   display: flex;
   flex-direction: row;
   overflow: hidden;
+  flex-basis: 59%;
 }
 
 .text {
@@ -292,7 +293,7 @@ p {
   }
 
   .slider-pagination__text {
-    flex-basis: 68%;
+    flex-basis: 67%;
   }
 }
 
