@@ -42,7 +42,7 @@ body {
   display: flex;
   width: 100%;
   height: calc(52vw - 11%);
-  border-radius: 30px;
+  border-radius: 3rem;
   overflow: hidden;
   box-shadow: 4px 11px 20px 22px rgb(34 60 80 / 40%);
 }
@@ -130,7 +130,7 @@ label {
   width: 34%;
   height: 35%;
   border-radius: 50%;
-  border: 2px solid rgb(48 22 53);
+  border: 0.2rem solid rgb(48 22 53);
   background-color: rgb(54 57 78);
 }
 
@@ -216,8 +216,8 @@ p {
 #slide4:active ~ .slider-pagination .pagination label[for="slide4"] > .btn-4,
 #slide5:active ~ .slider-pagination .pagination label[for="slide5"] > .btn-5  {
   background: rgb(194, 40, 104);
-  filter: blur(5px);
-  border: 1px solid rgb(238, 252, 116);
+  filter: blur(0.5rem);
+  border: 0.1rem solid rgb(238, 252, 116);
   transform: scale(1.8);
   opacity: 0.8;
 }
