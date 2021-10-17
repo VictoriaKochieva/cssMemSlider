@@ -119,15 +119,15 @@ label {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 56px;
-  height: 56px;
+  width: 6rem;
+  height: 5.7rem;
   cursor: pointer;
 }
 
 .pagination__button {
   display: inline-block;
-  width: 23px;
-  height: 23px;
+  width: 34%;
+  height: 35%;
   border-radius: 50%;
   border: 2px solid rgb(48 22 53);
   background-color: rgb(54 57 78);
@@ -305,6 +305,16 @@ p {
     flex-basis: 27%;
     width: 35%;
   }
+
+  label {
+    width: 10rem;
+    height: 5.7rem;
+  }
+
+  .pagination__button {
+    width: 1em;
+    height: 1em;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -339,7 +349,7 @@ p {
 
   .pagination {
     flex-basis: 27%;
-    width: 51%;
+    width: 58%;
   }
 
   .text {
